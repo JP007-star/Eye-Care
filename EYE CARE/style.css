@@ -1,0 +1,313 @@
+*
+ {
+     padding:0;
+     margin: 0;
+     box-sizing:border-box ;
+     height: 1024;
+     width: 768;
+ }
+ body
+ {
+    
+     background-color: #0e0e0e;
+    
+     overflow-x: scroll;
+     
+
+ }
+ 
+ H1
+ {
+     position: absolute;
+     top: 250px;
+     left: 350px;
+     font-size: 170px;
+     color: green;
+ }
+ H2
+ {
+     position: absolute;
+     top: 220px;
+     left: 150px;
+     font-size: 100px;
+     color: red;
+ }
+ H3
+ {
+     position: absolute;
+     top: 290px;
+     left: 650px;
+     font-size: 70px;
+     color: blue;
+ }
+ H4
+ {
+     position: absolute;
+     top: 390px;
+     left: 1250px;
+     font-size: 50px;
+     color:yellow;
+ }
+ H5
+ {
+     position: absolute;
+     top: 90px;
+     left: 950px;
+     font-size: 140px;
+     color:green;
+ }
+ H6
+ {
+     position: absolute;
+     top: 190px;
+     left: 850px;
+     font-size: 70px;
+     color:red;
+ }
+ #button1
+ {
+     border-radius: 50px;
+     height: 40px;
+     width: 140px;
+     background-color: #ffff04b9;
+     font-weight: bolder;
+     position: fixed;
+     left: 480px;
+     font-size: 20px;
+     top: 40px;
+     
+ 
+ }
+ #button2
+ {
+     border-radius: 50px;
+     height: 40px;
+     width: 140px;
+     background-color: #ffff04b9;
+     font-weight: bolder;
+     position: fixed;
+     left: 620px;
+     font-size: 20px;
+     top: 40px;
+     
+
+ 
+ }
+ #button3
+ {
+     border-radius: 50px;
+     height: 40px;
+     width: 140px;
+     background-color: #ffff04b9;
+     font-weight: bolder;
+     position: fixed;
+     left:760px;
+     font-size: 20px;
+     top: 40px;
+    
+ 
+ }
+ #button4
+ {
+     border-radius: 50px;
+     height: 40px;
+     width: 120px;
+     background-color: #ffff04b9;
+     font-weight: bolder;
+     position: fixed;
+     left: 900px;
+     font-size: 20px;
+     top: 40px;
+    
+ 
+ }
+ .dot {
+    height: 25px;
+    width: 25px;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;  
+  }
+
+footer{
+    position: absolute;
+    top: 640PX;
+    left: 370px;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.144);
+}
+
+  #heart {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    animation: heartbeat 10s infinite;
+    margin:0 auto
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 130px;
+    width: 50px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.24);
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+#stopwatch {
+    background-color: #4646464b;
+    color: #fefefe;
+    border-radius: 5px;
+   
+    width: 355px;
+    padding: 12px;
+    position: absolute;
+    top: auto;
+    
+   
+   
+    
+   
+   
+}
+
+.start {
+    border: 0px;
+    border-radius: 37px;
+    padding: 10px;
+    width: 60px;
+    font-weight: bold;
+    height: 35px;
+    cursor: pointer;
+}
+
+.stop {
+    border: 0px;
+    border-radius: 37px;
+    padding: 10px;
+    width: 60px;
+    font-weight: bold;
+    height: 35px;
+    cursor: pointer;
+    background-color: #0e0e0e;
+}
+
+.reset {
+    border: 0px;
+    border-radius: 37px;
+    padding: 10px;
+    width: 60px;
+    font-weight: bold;
+    height: 35px;
+    cursor: pointer;
+    background-color: #0e0e0e;
+}
+
+.btn:hover {
+
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#timer {
+    padding: 10px;
+    font-size: 25pt;
+    color: #3b3b3b;
+    margin: auto;
+    width: fit-content;
+}
+
+.time {
+    background-color: #d6d6d6;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.time:hover {
+    background-color: #fefefe;
+}
+
+#laps {
+    border: 0px;
+    background-color: #3a3a3a;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12pt;
+    margin: 25px;
+   
+}
+
+.lapBtn {
+    border: 0px;
+    border-radius: 37px;
+    padding: 10px;
+    width: 60px;
+    font-weight: bold;
+    height: 35px;
+    cursor: pointer;
+    background-color: #0e0e0e;
+    
+}
+@media print {
+    body * {
+      visibility: hidden;
+  
+    }
+  
+    #stopwatch * {
+      visibility: visible;
+      position: relative;
+      left: 80px;
+      
+    }
+    
+  }
+  #color{
+      color: #fefefe;
+      text-align: center;
+  }
+#fun{
+    color: #fefefe;
+      text-align: center;
+      font-size: 12px;
+}
+#name{
+    color:white;
+      text-align: center;
+      font-size: 15px;
+      height: 40px;
+      width: 300px;
+      background-color: #3a3a3a;
+      
+}
+
+
+
